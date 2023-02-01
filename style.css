@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#616161,#9bc5c3);
+    width: 100vw;
+    min-height:100vh ;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    background: linear-gradient(90deg,#E6DADA,#274046);
+    padding: 20px;
+    width: 30vw;
+    min-width: 300px;
+    height: 80vh;
+    border-radius: 15px;
+}
+#display{
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+#display input{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
+    border: none;
+    outline: none ; 
+    box-shadow: 0 0 5px white;
+    padding: 30px;
+}
+.grid-container{
+    height: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+}
+#equal{
+    grid-row: 4 / 6;
+    grid-column: 4/ 5;
+}
+
+
+button{
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+button:hover{
+    background-color:rgb(203, 203, 209) ;
+    transition: .5s ease-in-out;
+}
+@media screen and (max-width:768px) {
+    .main-container{
+        height: 90vh;
+        width: 50vw;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 12px;
+    }
+    .main-container{
+        height: 80vh;
+        width: 80vw;
+    }
+    .item{
+        font-size: 1.2rem;
+    }
+}
+
